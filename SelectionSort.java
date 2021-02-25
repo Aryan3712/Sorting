@@ -23,7 +23,6 @@ public class SelectionSort {
             }
             if(min!=pos){
                 swap(arr,pos,i);
-                display(arr, n);  
             }
         }
     }
