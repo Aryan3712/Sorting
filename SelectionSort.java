@@ -13,7 +13,6 @@ public class SelectionSort {
     }
     private static void selectionSort(int arr[],int n){
         for(int i=0;i<n-1;i++){
-            int swaps=0;
             int min = arr[i];
             int pos = i;
             for(int j=i+1;j<n;j++){
@@ -24,10 +23,8 @@ public class SelectionSort {
             }
             if(min!=pos){
                 swap(arr,pos,i);
-                display(arr, n);
-                swaps++;
+                display(arr, n);  
             }
-            System.out.println("i "+i+"swaps "+swaps);
         }
     }
     public static void main(String args[]){
